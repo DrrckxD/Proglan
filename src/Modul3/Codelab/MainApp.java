@@ -1,9 +1,9 @@
-package Modul3.Tugas;
-
+package Modul3.Codelab;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainApp {
+    static class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -48,7 +48,6 @@ public class Main {
                 break;
         }
 
-        
         System.out.print("Masukkan Nama Pelanggan: ");
         String namaPelanggan = scanner.nextLine();
 
@@ -56,10 +55,11 @@ public class Main {
         int jumlah = scanner.nextInt();
         double hargaSatuan = 23000.0;
 
-        NotaPemesanan nota = new NotaPemesanan(namaPelanggan, "Creampuff Zillicious", rasa, jumlah, hargaSatuan);
+        Modul3.Tugas.NotaPemesanan nota = new Modul3.Tugas.NotaPemesanan(namaPelanggan, "Creampuff Zillicious", rasa, jumlah, hargaSatuan);
 
 
         nota.cetakNota();
         scanner.close();
     }
+}
 }

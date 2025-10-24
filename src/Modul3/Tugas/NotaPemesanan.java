@@ -1,6 +1,6 @@
 package Modul3.Tugas;
 
-// NotaPemesanan.java
+
 public class NotaPemesanan {
     private String namaPelanggan;
     private String makananPesanan;
@@ -9,7 +9,7 @@ public class NotaPemesanan {
     private double hargaSatuan;
     private double totalHarga;
 
-    // Konstruktor
+
     public NotaPemesanan(String namaPelanggan, String makananPesanan, String rasa, int jumlah, double hargaSatuan) {
         this.namaPelanggan = namaPelanggan;
         this.makananPesanan = makananPesanan;
@@ -19,12 +19,12 @@ public class NotaPemesanan {
         hitungTotalHarga();
     }
 
-    // Method untuk menghitung total harga
+
     private void hitungTotalHarga() {
         this.totalHarga = jumlah * hargaSatuan;
     }
 
-    // Method untuk mencetak nota
+
     public void cetakNota() {
         System.out.println("=====================================");
         System.out.println("Nota Pemesanan - Zillicious Restaurant");
@@ -37,7 +37,7 @@ public class NotaPemesanan {
         System.out.println("=====================================");
     }
 
-    // Getter dan Setter
+
     public String getNamaPelanggan() {
         return namaPelanggan;
     }
