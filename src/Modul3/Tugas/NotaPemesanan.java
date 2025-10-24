@@ -4,7 +4,7 @@ package Modul3.Tugas;
 public class NotaPemesanan {
     private String namaPelanggan;
     private String makananPesanan;
-    private String rasa; // Variasi rasa
+    private String rasa;
     private int jumlah;
     private double hargaSatuan;
     private double totalHarga;
